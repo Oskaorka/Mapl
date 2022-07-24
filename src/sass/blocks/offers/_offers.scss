@@ -1,0 +1,118 @@
+.offers {
+    margin-top: 119px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 487px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        color: #323232;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 32px;
+        color: #323232;
+        margin-bottom: 47px;
+    }
+    &__cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 24px;
+    }
+    &__card {
+        width: 160px;
+        height: 140px;
+        background: #FFFFFF;
+        border: 1px solid #D0D0D0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: 4px 4px 4px rgb(55, 52, 52),
+        }
+        &-title {
+            height: 20px;
+            font-size: 10px;
+            line-height: 10px;
+            color: #FFFFFF;;
+            text-align: center;
+            text-transform: uppercase;
+            background: #3DC47E;
+            border-radius: 3px;
+            padding: 6px 0 4px 0;
+            margin: 12px 0 6px 0;
+        }
+        &-choice {
+            justify-content: flex-start;
+        }
+        &-popular, &-new {
+            width: 70px;
+        }
+        &-ending-soon {
+            width: 78px;
+
+        }
+        &-descr {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #000000;
+        }
+        &-price {
+            margin-top: 8px;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 22px;
+            text-align: center;
+            color: #000000;
+        }
+    }
+    &__all {
+        position: relative;
+        font-weight: 500;
+        // font-size: 16px;
+        line-height: 16px;
+        // letter-spacing: .px;
+        color: #0088CC;
+        margin-top: 32px;
+        &:hover {
+            text-decoration: none;
+            color:  $red;
+        }
+        &::after {
+            content: "";
+            width: 7px;
+            height: 1px;
+            display: block;
+            background-color: #0088CC;
+            position: absolute;
+            top: 6px;
+            right: -10px;
+            transform: rotate(45deg);
+        }
+        &::before {
+            content: "";
+            width: 7px;
+            height: 1px;
+            display: block;
+            background-color: #0088CC;
+            position: absolute;
+            top: 10px;
+            right: -10px;
+            transform: rotate(-45deg);
+        }
+    }
+}

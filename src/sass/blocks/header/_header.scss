@@ -1,0 +1,70 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 172px;
+    display: flex;
+    flex-direction: row-reverse;
+    h2 {
+      margin: 0;
+      font-family: "Ubuntu", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: $dark;
+      height: 36px;
+      width: 142px;
+      padding-left: 5px;
+    }
+    a {
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    &-standart {
+      color: $dark;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      margin-right: 24px;
+      &:hover {
+        text-decoration: none;
+        color: $red;
+      }
+    }
+    &-SignIn {
+      margin: 0;
+      width: 149px;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 4px;
+      text-align: center;
+      margin-left: 2px;
+      border: 1px solid $green;
+      background: #ffffff;
+    }
+    &-SignIn:hover {
+      text-decoration: none;
+      color: $green;
+    }
+  }
+}

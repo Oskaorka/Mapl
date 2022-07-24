@@ -1,0 +1,60 @@
+@media (max-width: 992px) {
+    .features {
+        margin-top: 45px;
+        height: 465px;
+        &-title {
+            font-size: 28px;
+            margin-top: 45px;
+        }
+        &-slogan {
+            font-size: 42px;
+        }
+        &__cards-wrapper {
+            margin-top: 45px;
+            height: 215px;
+        }
+    }
+  }
+  @media (max-width: 768px) {
+    .features {
+        margin-top: 15px;
+        height: 615px;
+        &__cards-wrapper {
+            flex-wrap: wrap;
+            column-gap: 15px;
+            row-gap: 15px;
+            width: 485px;
+        }
+        &__card {
+            width: 235px;
+        }
+    }
+  }
+  @media (max-width: 576px) {
+    .features {
+        height: 640px;
+        &-title {
+            font-size: 26px;
+            margin-top: 25px;
+        }
+        &-slogan {
+            font-size: 32px;
+            text-align: center;
+        }
+        &__cards-wrapper {
+            margin-top: 25px;
+            column-gap: 5px;
+            row-gap: 5px;
+            width: 310px;
+            
+        }
+        &__card {
+            width: 152px;
+            &-descr {
+                height: 100px;
+                line-height: 24px;
+                font-size: 15px;
+            }
+        }
+    }
+  }

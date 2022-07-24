@@ -1,0 +1,24 @@
+@import "./libs/bootstrap-reboot.min";
+@import "./base/variables";
+@import "base.scss";
+
+@import "./blocks/header/header";
+@import "./blocks/main/main";
+@import "./blocks/offers/offers";
+@import "./blocks/about/about";
+@import "./blocks/features/features";
+@import "./blocks/support/support";
+@import "./blocks/reviews/reviews";
+@import "./blocks/footer/footer";
+
+@import "./blocks/header/media-header";
+@import "./blocks/main/media-main";
+@import "./blocks/offers/media-offers";
+@import "./blocks/about/media-about";
+@import "./blocks/features/media-features";
+@import "./blocks/reviews/media-reviews";
+@import "./blocks/support/media-support";
+@import "./blocks/footer/media-footer";
+@import "./blocks/search-result/search-result";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Ubuntu:wght@300;600;700;900&display=swap");
